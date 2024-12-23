@@ -1,0 +1,24 @@
+services:
+  wrapper:
+    build:
+      context: /Users/ruaalm9/ClionProjects/demo/asm-procedures/docker/image
+      dockerfile: Dockerfile
+    cap_add:
+      - SYS_PTRACE
+    container_name: fibers
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 22
+        published: "3333"
+        protocol: tcp
+    stdin_open: true
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/ruaalm9/ClionProjects/demo/asm-procedures
+        target: /workspace
+        bind:
+          create_host_path: true
