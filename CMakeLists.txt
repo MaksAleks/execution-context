@@ -4,10 +4,10 @@ project(asm_procedures C ASM)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(asm_procedures
-        fiber.S
         stack.c
         stack.h
-        fiber.h
-        fiber.c
+        execution_context.S
+        execution_context.c
+        execution_context.h
         main.c
 )

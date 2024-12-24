@@ -1,7 +1,7 @@
 services:
   wrapper:
     build:
-      context: /Users/ruaalm9/ClionProjects/demo/asm-procedures/docker/image
+      context: /Users/alekseev_m/CLionProjects/asm_procedures/docker/image
       dockerfile: Dockerfile
     cap_add:
       - SYS_PTRACE
@@ -18,7 +18,7 @@ services:
     tty: true
     volumes:
       - type: bind
-        source: /Users/ruaalm9/ClionProjects/demo/asm-procedures
+        source: /Users/alekseev_m/CLionProjects/asm_procedures
         target: /workspace
         bind:
           create_host_path: true

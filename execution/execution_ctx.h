@@ -1,0 +1,8 @@
+//
+// Created by Максим Алексеев on 24.12.2024.
+//
+
+#ifndef ASM_PROCEDURES_EXECUTION_CTX_H
+#define ASM_PROCEDURES_EXECUTION_CTX_H
+
+#endif //ASM_PROCEDURES_EXECUTION_CTX_H
