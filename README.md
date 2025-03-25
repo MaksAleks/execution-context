@@ -14,7 +14,7 @@ int run(int (*routine)(void*, void*)) {
     printf("Going to invoke a routine by address %p\n", addr);
     // we jump to `routine` function by its address, switching execution flow.
     // we don't return from jump function in a normal sense.
-    // `jump` switches to `routine`, and when the `routine` returns, it `jump` makes you return from `run`.
+    // `jump` switches to `routine`, and when the `routine` returns, this `jump` makes you return from `run`.
     jump(routine);
     // never returns - meaning, we never got here
     printf("Never got here");
